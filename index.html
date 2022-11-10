@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family
+    =Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap" 
+    rel="stylesheet"> <!--fontawesome-sen-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>MovieApp</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container"><h1 class="logo">movieapp</h1></div>
+                <div class="menu-container">
+                    <ul class="menu-list">
+                    <li class="menu-list-item active">Home</li>
+                    <li class="menu-list-item">Movies</li>
+                    <li class="menu-list-item">Series</li>
+                    <li class="menu-list-item">Populer</li>
+                    <li class="menu-list-item">Trends</li>            
+                    </ul>
+                </div>
+                    <a href="login.html"><div class="profile-container"></a>
+                        <img class="profile-picture" src="image/pp.jpg" alt="">
+                        <div class="profile-text-container">
+                            <span class="profile-text">Profile</span>
+                            <a href="login.html"><i class="fas fa-caret-down"></i></a> <!--fontawesomedan icon-->
+                        </div>
+                        <div class="toggle">
+                            <i class="fas fa-moon toggle-icon"></i>
+                            <i class="fas fa-sun toggle-icon"></i>
+                            <div class="toggle-ball"></div><!--dark mode-->
+                        </div> 
+                    </div>
+                </div>
+            </div>
+    <div class="sidebar"> 
+        <a href="login.html"><i class="left-menu-icon fas fa-search"></i></a>
+        <a href="index.html"><i class="left-menu-icon fas fa-home"></i></a> 
+        <i class="left-menu-icon fas fa-users"></i> 
+        <i class="left-menu-icon fas fa-bookmark"></i>
+        <i class="left-menu-icon fas fa-tv"></i>
+        <i class="left-menu-icon fas fa-hourglass-start"></i>
+        <i class="left-menu-icon fas fa-shopping-cart"></i>
+    </div>
+    <div class="container"><!-- dıştaki genel container dışında içerde yeni bir iç container oluşturuyoruz -->
+        <div class="content-container">
+
+            <div class="featured-content" 
+            style="background: linear-gradient(to bottom ,rgba(0,0,0,0) ,#151515), url('image/interstellarbig.webp')" ; 
+            >   <!-- bunu ekrana sığdır!!! -->
+            <!-- <img class="featured-title" alt="INTERSTELLAR"> -->
+            <!-- <p class="featured-desc">Christopher Nolan'ın, Jonathan Nolan ile kaleme aldığı ve yönetmenliğini sırtladığı filmin yıldız oyunculardan oluşan oyuncu kadrosunda
+                Matthew McConaughey, Anne Hathaway, Jessica Chastain, Matt Damon, Bill Irwin, John Lithgow ve Michael Caine gibi isimler yer alıyor. Bilimkurgunun yanı sıra
+                dramatik öğeler de içeren filmin senaryosu Fizikçi Kip S. Thorne'nun evrendeki 'Solucan Delikleri' teorisinden ilham alıyor.</p>
+            <button class="featured-button">İZLE</button> -->
+        </div> <!-- django eklemişti videodaki hoca -->
+        </div class="movie-list-container">
+        
+            <h1 class="movie-list-title">YENİ EKLENENLER</h1>
+            <div class="movie-list-wrapper">  
+                <div class="movie-list" >
+                    <div class="movie-list-item">
+                        <img  class="movie-list-item-img" src="image/aclik-oyunlari-1660920788.jpeg">
+                        <span class="movie-list-item-title">The Hunger Games</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptas impedit at, eos temporibus ipsum quod.</p> 
+                            <button class="movie-list-item-button">İZLE</button>
+                    </div>  
+                    <div class="movie-list-item">
+                        <img  class="movie-list-item-img" src="image/12-kizgin-adam-1660915309.jpeg" alt="">
+                        <span class="movie-list-item-title">12 Angry Man</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptas impedit at, eos temporibus ipsum quod.</p>
+                            <button class="movie-list-item-button">İZLE</button>
+                    </div>  
+                    <div class="movie-list-item">
+                        <img  class="movie-list-item-img" src="image/Beautiful_mind.jpeg"">
+                        <span class="movie-list-item-title">Beautiful Mind</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptas impedit at, eos temporibus ipsum quod.</p>
+                            <button class="movie-list-item-button">İZLE</button>
+                    </div>  
+                    <div class="movie-list-item">
+                        <img  class="movie-list-item-img" src="image/candostum.jpg">
+                        <span class="movie-list-item-title">Can Dostum</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptas impedit at, eos temporibus ipsum quod.</p>
+                            <button class="movie-list-item-button">İZLE</button>
+                    </div>  
+                    <div class="movie-list-item">
+                        <img  class="movie-list-item-img" src="image/forrest-gump-1660915302.jpeg">
+                        <span class="movie-list-item-title">Forrest Gump</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptas impedit at, eos temporibus ipsum quod.</p>
+                            <button class="movie-list-item-button">İZLE</button>
+                    </div>  
+                    <div class="movie-list-item">
+                        <img  class="movie-list-item-img" src="image/inception.jpeg">
+                        <span class="movie-list-item-title">Inception</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptas impedit at, eos temporibus ipsum quod.</p>
+                            <button class="movie-list-item-button">İZLE</button>
+                    </div>  
+                    <div class="movie-list-item">
+                        <img  class="movie-list-item-img" src="image/limit-yok-1660919807.jpeg">
+                        <span class="movie-list-item-title">Limitless</span>
+                        <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptas impedit at, eos temporibus ipsum quod.</p>
+                            <button class="movie-list-item-button">İZLE</button>
+                    </div>  
+                </div>
+                <i class="fas fa-chevron-right arrow"></i>
+            </div>
+        </div>
+        <div class="content-container">
+        <div class="featured-content" 
+            style="background: linear-gradient(to bottom ,rgba(0,0,0,0) ,#151515), url('image/dark.jpeg');"
+            >  <!-- bunu ekrana sığdır!!! -->
+           <!--  <img class="featured-title" alt="DARK">
+            <p class="featured-desc">Bir çocuğun kaybolması, dört aileyi hummalı bir cevap arayışına iter.
+                Bu arayışları, üç nesli kapsayan akıl almaz bir gizemi ortaya çıkarmalarına neden olur.
+                Canınız neyi isterse izleyin. Baran bo Odar ve Jantje Friese imzalı bu sürükleyici dizi,
+                En İyi Kurgusal TV Yapımı dalında Grimme-Preis ödülü kazandı.</p>
+            <button class="featured-button">İZLE</button> -->
+        </div>
+    </div class="movie-list-container">
+    <h1 class="movie-list-title">YENİ EKLENENLER</h1>
+    <div class="movie-list-wrapper">  
+        <div class="movie-list">
+            <div class="movie-list-item">
+                <img  class="movie-list-item-img" src="image/melekler-ve-seytanlar-1660915530.jpeg">
+                <span class="movie-list-item-title">Melekler ve Şeytanlar</span>
+                <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptas impedit at, eos temporibus ipsum quod.</p> 
+                    <button class="movie-list-item-button">İZLE</button>
+            </div>  
+            <div class="movie-list-item">
+                <img  class="movie-list-item-img" src="image/pinin-yasami-1660922173.jpeg">
+                <span class="movie-list-item-title">Pi'nin Yaşamı</span>
+                <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptas impedit at, eos temporibus ipsum quod.</p>
+                    <button class="movie-list-item-button">İZLE</button>
+            </div>  
+            <div class="movie-list-item">
+                <img  class="movie-list-item-img" src="image/piyanist-1660915262.jpeg">
+                <span class="movie-list-item-title">Pianist</span>
+                <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptas impedit at, eos temporibus ipsum quod.</p>
+                    <button class="movie-list-item-button">İZLE</button>
+            </div>  
+            <div class="movie-list-item">
+                <img  class="movie-list-item-img" src="image/sikiysa-yakala-1660915215.jpeg">
+                <span class="movie-list-item-title">Sıkıysa Yakala</span>
+                <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptas impedit at, eos temporibus ipsum quod.</p>
+                    <button class="movie-list-item-button">İZLE</button>
+            </div>  
+            <div class="movie-list-item">
+                <img  class="movie-list-item-img" src="image/split.jpg">
+                <span class="movie-list-item-title">Split</span>
+                <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptas impedit at, eos temporibus ipsum quod.</p>
+                    <button class="movie-list-item-button">İZLE</button>
+            </div>  
+            <div class="movie-list-item">
+                <img  class="movie-list-item-img" src="image/the-prototype-1660920240.jpeg">
+                <span class="movie-list-item-title">The Prototype</span>
+                <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptas impedit at, eos temporibus ipsum quod.</p>
+                    <button class="movie-list-item-button">İZLE</button>
+            </div>  
+            <div class="movie-list-item">
+                <img  class="movie-list-item-img" src="image/truman-show-1660915262.jpeg">
+                <span class="movie-list-item-title">Truman Show</span>
+                <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptas impedit at, eos temporibus ipsum quod.</p>
+                    <button class="movie-list-item-button">İZLE</button>
+            </div>  
+        </div>
+        <i class="fas fa-chevron-right arrow"></i>
+    </div>
+</div>
+</div>
+<div class="content-container">
+<div class="featured-content" 
+style="background: linear-gradient(to bottom ,rgba(230, 64, 64, 0.168) ,#151515), url('image/cernobil-1986.{format}"
+>  <!-- bunu ekrana sığdır!!! -->
+<!-- <img class="featured-title" alt="CHERNOBYL">
+<p class="featured-desc">Avrupa'da tatile çıkan altı kişilik bir arkadaş grubu, gezilerinde rehberlik 
+    etmesi için farklı bir turist rehberi tutarlar. Adam onları, Çernobil nükleer faciasından önce 
+    işçilerin ikamet ettiği ama artık terk edilmiş olan Pripyat şehrine götürür.
+    Yıkıntıların arasında gezerken turist kafilesi aslında yalnız olmadıklarını fark edeceklerdir...</p>
+<button class="featured-button">İZLE</button> -->
+</div>
+</div class="movie-list-container">
+<h1 class="movie-list-title">YENİ EKLENENLER</h1>
+<div class="movie-list-wrapper">  
+    <div class="movie-list">
+        <div class="movie-list-item">
+            <img  class="movie-list-item-img" src="image/v-for-vendetta-1660915268.jpeg">
+            <span class="movie-list-item-title">V For Vendetta</span>
+            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas impedit at, eos temporibus ipsum quod.</p> 
+                <button class="movie-list-item-button">İZLE</button>
+        </div>  
+        <div class="movie-list-item">
+            <img  class="movie-list-item-img" src="image/yarindan-sonra-1660915218.jpeg">
+            <span class="movie-list-item-title">Yarından Sonra</span>
+            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas impedit at, eos temporibus ipsum quod.</p>
+                <button class="movie-list-item-button">İZLE</button>
+        </div>  
+        <div class="movie-list-item">
+            <img  class="movie-list-item-img" src="image/yesil-yol-1660915301.jpeg">
+            <span class="movie-list-item-title">Yeşil Yol</span>
+            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas impedit at, eos temporibus ipsum quod.</p>
+                <button class="movie-list-item-button">İZLE</button>
+        </div>  
+        <div class="movie-list-item">
+            <img  class="movie-list-item-img" src="image/zindan-adasi-1660915926.jpeg">
+            <span class="movie-list-item-title">Zindan Adası</span>
+            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas impedit at, eos temporibus ipsum quod.</p>
+                <button class="movie-list-item-button">İZLE</button>
+        </div>  
+        <div class="movie-list-item">
+            <img  class="movie-list-item-img" src="image/inception.jpeg" alt="">
+            <span class="movie-list-item-title">Inception</span>
+            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas impedit at, eos temporibus ipsum quod.</p>
+                <button class="movie-list-item-button">İZLE</button>
+        </div>  
+        <div class="movie-list-item">
+            <img  class="movie-list-item-img" src="image/inception.jpeg" alt="">
+            <span class="movie-list-item-title">Inception</span>
+            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas impedit at, eos temporibus ipsum quod.</p>
+                <button class="movie-list-item-button">İZLE</button>
+        </div>  
+        <div class="movie-list-item">
+            <img  class="movie-list-item-img" src="image/inception.jpeg" alt="">
+            <span class="movie-list-item-title">Inception</span>
+            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas impedit at, eos temporibus ipsum quod.</p>
+                <button class="movie-list-item-button">İZLE</button>
+        </div>  
+    </div>
+    
+    <i class="fas fa-chevron-right arrow"></i>
+            </div>
+        </div>
+    </div> 
+</div> 
+            <script src="ui.js"></script>
+            <script src="storage.js"></script>
+            <script src= "film.js"></script>
+            <script src="app.js"></script>
+            <script src="login.js"></script>
+
+            <script src="project.js"></script>
+
+</body>
+</html>

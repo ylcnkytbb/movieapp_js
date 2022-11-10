@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family
+    =Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap" 
+    rel="stylesheet"> <!--fontawesome-sen-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Film Project</title>
+</head>
+<body>
+  <div class="navbar">
+    <div class="navbar-container">
+        <div class="logo-container"><h1 class="logo">movieapp</h1></div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                <li class="menu-list-item active">Home</li>
+                <li class="menu-list-item">Movies</li>
+                <li class="menu-list-item">Series</li>
+                <li class="menu-list-item">Populer</li>
+                <li class="menu-list-item">Trends</li>            
+                </ul>
+            </div>
+               <div class="profile-container">  
+                    <img class="profile-picture" src="image/pp.jpg" alt="">
+                    <div class="profile-text-container">
+                        <span class="profile-text">Profile</span>
+                            <a href="login.html"> <i class="fas fa-caret-down"></i></a> <!--fontawesomedan icon-->
+                    </div>
+                    <div class="toggle" style="float: right;">
+                        <i class="fas fa-moon toggle-icon"></i>
+                        <i class="fas fa-sun toggle-icon"></i>
+                        <div class="toggle-ball"></div><!--dark mode-->
+                    </div> 
+                </div>
+            </div>
+        </div>
+<div class="sidebar"> 
+    <a href="index2.html"><i class="left-menu-icon fas fa-search"></i></a>
+    <a href="index.html"><i class="left-menu-icon fas fa-home"></i></a> 
+    <i class="left-menu-icon fas fa-users"></i> 
+    <i class="left-menu-icon fas fa-bookmark"></i>
+    <i class="left-menu-icon fas fa-tv"></i>
+    <i class="left-menu-icon fas fa-hourglass-start"></i>
+    <i class="left-menu-icon fas fa-shopping-cart"></i>
+</div>
+        <div class="container" style = "margin-top:20px; background-attachment: fixed"; >     
+
+                <div class="card row">
+                    <!-- <div class="card-header">MovieApp</div> -->
+                    <div class="card-body">
+                            <form id = "film-form" name="form">
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <input class="form-control" type="text" name="title" id = "title" placeholder="Film İsmi">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                            <input class="form-control" type="text" name="director" id = "director" placeholder="Yönetmen">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                            <input class="form-control" type="text" name="url" id = "url" placeholder="Film Afiş Linki">
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-success">Film Ekleyin</button>
+                            </form>
+                  
+                     </div>
+                 
+                     <div class="card-body">
+                            
+                            <h5 class="card-title" id = "films-title">Filmler</h5>
+        
+                            
+                            <table class="table table">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">Film Afişi</th>
+                                        <th scope="col">Film İsmi</th>
+                                        <th scope="col">Yönetmen</th>
+                                        
+                                      </tr>
+                                    </thead>
+                                    <tbody id = "films">
+                                        <!-- <tr>
+                                            <td><img src="" class="img-fluid img-thumbnail"></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><a href="#" id = "delete-film" class = "btn btn-danger">Filmi Sil</a></td>
+                                          </tr> -->
+                                          <!-- <tr>
+                                            <td><img src="" class="img-fluid img-thumbnail"></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><a href="#" id = "delete-film" class = "btn btn-danger">Filmi Sil</a></td>
+                                          </tr> -->
+                                         
+                                    </tbody>
+                                  </table>
+                            <hr>  
+                            <a id = "clear-films" class="btn btn" href="#">Tüm Filmleri Temizleyin</a>    
+                                     
+                        </div>
+                      </div>
+                
+            </div>
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+            
+            <script src="ui.js"></script>
+            <script src="storage.js"></script>
+            <script src= "film.js"></script>
+            <script src="app.js"></script>
+            <script src="login.js"></script>
+
+            <script src="project.js"></script>
+
+</body>
+</html>
